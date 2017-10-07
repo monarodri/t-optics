@@ -26,6 +26,10 @@ a {
 
 /** Header **/
 
+.mobile-nav {
+    display: none;
+}
+
 .navbox {
     display: flex;
     width: 100%;
@@ -120,7 +124,7 @@ header .flex {
 }
 
 .title {
-    max-width: 10rem;
+    width: 10rem;
     color: white;
     font-weight: bold;
     padding: 0.5rem 1.25rem; 
@@ -152,6 +156,10 @@ h1 {
     line-height: 1.2rem;
 }
 
+h5 {
+    line-height: 1.2rem;
+}
+
 @media only screen and (max-width: 1024px) {
     .container {
        width: 100%; 
@@ -171,4 +179,81 @@ h1 {
     h1 {
         font-size: 1.33rem;
     }
+}
+
+@media only screen and (max-width: 630px) {
+    header {
+        height: 17rem;
+        background-position: 20%;
+    }
+    
+    .logo span {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+    
+    nav span {
+        display: none;
+    }
+    
+    .look {
+        width: 100%;
+        margin-top: 9rem;
+        margin-right: 0rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    .support {
+        flex-direction: column;
+        align-items: center;
+        margin: 3.77rem 0;
+    }
+    
+    .service {
+        margin: 0rem;
+        height: 7rem;
+        padding: 0 0 1.8rem 0;
+    }
+    
+    .ruler, .truck {
+        height: 5.4rem;
+    }
+    
+    .info {
+        width: 100%;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    p {
+        padding: 1rem;
+        font-size: 0.77rem;
+    }
+    
+    .title {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    h5 {
+        margin-top: 1rem;
+        font-size: 0.77rem;
+    }
+
+    
+    footer .logo img {
+        margin: 0 auto;
+    }
+    
+    footer {
+        margin-top: 0;
+    }
+    
 }
