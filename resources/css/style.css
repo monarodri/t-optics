@@ -151,3 +151,24 @@ h1 {
     font-size: 2rem;
     line-height: 1.2rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    .container {
+       width: 100%; 
+    }
+    
+    header {
+        height: 22rem;
+        padding-top: 0rem;
+    }
+    
+    .look {
+        margin-top: 5rem;
+        margin-right: 2rem;
+        padding: 1.75rem 4rem;
+    }
+    
+    h1 {
+        font-size: 1.33rem;
+    }
+}
